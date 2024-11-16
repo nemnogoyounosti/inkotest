@@ -1,21 +1,122 @@
 <!DOCTYPE html>
-    <html lang="ru">
+    <html lang="ru" class="webp">
     @@include('html/head.html', {
         'title': 'SITE'
     })
     <body>
-        @@include('html/ExHeader.html', {})
-        @@include('html/ExCookie.html', {})
+       
 
-        <main class="main">
-            @@include('html/ExCentered-gallery.html', {})
-            @@include('html/ExDropSelect.html', {})
-            @@include('html/ExLightbox.html', {})
-            @@include('html/ExGallery.html', {})
-            @@include('html/ExAccordion.html', {})
-        </main>
+        <section class="hero">
+            <div class="container hero__container">
+                <div class="hero__content hero__content_custom hero__content_banner">
+                    <h1 class="hero__text hero__title hero__title_custom hero__title_direction">
+                        «ИНКО-ШКОЛА» - СЕМЕЙНЫЕ КЛАССЫ С УГЛУБЛЕННЫМ ИЗУЧЕНИЕМ АНГЛИЙСКОГО ЯЗЫКА
+                    </h1>
 
-        @@include('html/ExFooter.html', {})
-        @@include('html/script.html', {})
+                    <div class="hero-news__accent-content">
+                        <span class="hero__text hero-news__accent hero__accent hero__direction_desp">Семейные классы – вид альтернативного образования, распространенный в больших городах, – теперь в Новомосковске. Мы расположены в современном безопасном здании в самом центре города и предлагаем все для комфортного и эффективного обучения ваших детей</span>
+                    </div>
+                    
+        
+                    <a href="#" class="hero__button_direction" data-fancybox data-src="#popup-main-application">Записьтя на занятие</a>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="result">
+
+            <div class="container result__container">
+
+                <div class="result__block">
+                    <div class="result__block-item">
+
+                        <h2 class="title__heading"><mark>Что мы</mark> <br> предлагаем?</h2>
+
+                        <div class="result__list">
+                            <div class="result__list-item">
+                                <p class="result__list-descp result__list-background">Инновационный подход</p>
+                            </div>
+
+                            <div class="result__list-item">
+                                <p class="result__list-descp">Обучение с заботой</p>
+                            </div>
+
+                            <div class="result__list-item">
+                                <p class="result__list-descp">Внимание к каждому </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="result__block-item">
+
+                        <div class="result__block-center">
+                            <h2>Эффективное начальное образование</h2>
+
+                            <p class="result__block-center-subtitle">Ребёнок получит: </p>
+
+                            <div class="result__block-list">
+
+
+                                <div class="result__block-list-item">
+                                    <div class="result__block-list-icon">
+                                        <img src="@img/icons/foot-line.svg" alt="" class="btn-icon">
+                                    </div>
+
+                                    <div class="result__block-list-descp">
+                                        <span class="result__center-descrp">Программа «Школа России» и официальная аттестация</span>
+                                    </div>
+                                </div>
+
+                                <div class="result__block-list-item">
+                                    <div class="result__block-list-icon">
+                                        <img src="@img/icons/award-05.svg" alt="" class="btn-icon">
+                                    </div>
+
+                                    <div class="result__block-list-descp">
+                                        <span class="result__center-descrp">Комфортные условия  обучения и 
+                                            современные классы от 8 до 12 чел.</span>
+                                    </div>
+                                </div>
+
+                                <div class="result__block-list-item">
+                                    <div class="result__block-list-icon">
+                                        <img src="@img/icons/graduation.svg" alt="" class="btn-icon">
+                                    </div>
+
+                                    <div class="result__block-list-descp">
+                                        <span class="result__center-descrp">График с 9:00 до 17:00 и гибкий приём детей</span>
+                                    </div>
+                                </div>
+
+                                <div class="result__block-list-item">
+                                    <div class="result__block-list-icon">
+                                        <img src="@img/icons/lucide_brain.svg" alt="" class="btn-icon">
+                                    </div>
+
+                                    <div class="result__block-list-descp">
+                                        <span class="result__center-descrp">В нашей школе дети не болеют!</span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="result__block-item result__block-item-right">
+                        <h2 class="result__block-right">Результат виден уже после первых занятий</h2>
+                    </div>
+                </div>
+                
+            
+            </div>
+
+        </section>
+
+
     </body>
 </html> 
