@@ -80,14 +80,22 @@
         text-decoration: none;
         color: white;
     }
+
+    @media (max-width: 640px){
+        font-size: 16px;
+    }
 }
 
 .result{
     margin-top: 115px;
     padding: 0px 20px 0px 20px;
 
-    @media (max-width: 768px){
+    @media (max-width: 1024px){
         margin-top: 85px;
+    }
+
+    @media (max-width: 640px){
+        margin-top: 40px;
     }
 }
 
@@ -97,6 +105,14 @@
 
     &-item{
         width: 33.333%;
+
+        @media (max-width: 1024px){
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 1024px){
+        flex-direction: column;
     }
 }
 
@@ -108,6 +124,14 @@ mark{
 .title__heading{
     font-size: 50px;
     line-height: 108%;
+
+    @media (max-width: 1024px){
+        font-size: 32px;
+    }
+
+    @media (max-width: 640px){
+        font-size: 24px;
+    }
 }
 
 
@@ -116,6 +140,10 @@ mark{
 
     &-item{
         display: inline-block;
+    }
+
+    @media (max-width: 640px){
+        margin-top: 25px;
     }
 }
 
@@ -126,6 +154,11 @@ mark{
     line-height: 134%;
     color: #282a65;
     padding: 15px 30px;
+
+    @media (max-width: 640px){
+        font-size: 16px;
+        padding: 5px 30px;
+    }
 }
 
 .result__list-background{
@@ -140,6 +173,21 @@ mark{
     border: 1px solid #d6dade;
     border-radius: 20px;
     padding: 30px;
+
+    h2{
+        @media (max-width: 1024px){
+            font-size: 32px;
+        }
+
+        @media (max-width: 640px){
+            font-size: 24px;
+        }
+    }
+
+    @media (max-width: 1024px){
+        margin-top: 15px;
+    }
+
 }
 
 .result__block-center-subtitle{
@@ -153,6 +201,10 @@ mark{
     font-weight: 400;
     font-size: 20px;
     color: #282a65;
+
+    @media (max-width: 640px){
+        font-size: 16px;
+    }
 }
 
 .result__block-list-item {
@@ -162,6 +214,13 @@ mark{
 
     + .result__block-list-item{
         margin-top: 35px;
+    }
+
+    @media (max-width: 640px){
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
 }
 
@@ -174,10 +233,24 @@ mark{
     line-height: 108%;
     color: #282a65;
     margin: 0;
+
+    @media (max-width: 1024px){
+        font-size: 32px;
+        margin-top: 30px;
+
+        @media (max-width: 640px){
+            font-size: 24px;
+        }
+    }
 }
 
 .result__block-item-right{
     padding-left: 55px;
     align-items: center;
     display: flex;
+
+    @media (max-width: 1024px){
+        padding-left: 0;
+        align-items: flex-start;
+    }
 }
