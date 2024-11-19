@@ -422,11 +422,6 @@
         flex-direction: column;
         padding-bottom: 50px;
     }
-
-    &:last-child{
-        border: none;
-        padding-bottom: 0;
-    }
 }
 
 .predmetDirection__item{
@@ -683,4 +678,177 @@
             font-size: 16px;
         }
     }
+}
+
+.achievementsDirection{
+    margin-top: 175px;
+    padding: 0px 20px 0px 20px;
+
+    @media (max-width: 1024px){
+        margin-top: 85px;
+    }
+
+    @media (max-width: 640px){
+        margin-top: 40px;
+    }
+}
+
+.achievementsDirection {
+
+    &__block-title {
+        font-weight: 700;
+        font-size: 88px;
+        color: #ab91c4; 
+        margin-bottom: 5px;
+        line-height: 93px;
+
+        @media (max-width: 1024px){
+            font-size: 64px;
+        }
+    }
+
+    &__block-subtitle {
+        font-weight: 400;
+        font-size: 20px;
+        color: #282a65;
+        margin: 0;
+    }
+}
+
+
+.achievementsDirection__block-item + .achievementsDirection__block-item{
+    margin-top: 35px;
+}
+
+.achievementsDirection__block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.achievementsDirection {
+
+
+    &__column-1 {
+        width: 50%;
+        text-align: left;
+
+        @media (max-width: 640px){
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    &__column-2 {
+        width: 50%;
+        text-align: right;
+
+        @media (max-width: 640px){
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    &__column-3 {
+        width: 50%;
+        text-align: left;
+        margin-left: 15px;
+
+        @media (max-width: 640px){
+            width: 100%;
+            text-align: center;
+            margin-left: 0;
+        }
+    }
+
+    &__column-4 {
+        width: 50%;
+        text-align: right;
+
+        @media (max-width: 640px){
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+
+.familyDirection{
+    margin-top: 115px;
+    padding: 0px 20px 0px 20px;
+
+    @media (max-width: 1024px){
+        margin-top: 85px;
+    }
+
+    @media (max-width: 640px){
+        margin-top: 40px;
+    }
+}
+
+.familyDirection {
+
+    &__block {
+        display: flex;
+        align-items: center;
+        gap: 70px;
+
+        @media (max-width: 768px){
+            flex-direction: column;
+            align-items: center;
+            justify-self: center;
+            gap: 40px;
+        }
+    }
+
+
+
+    &_block-right {
+
+        @media (max-width: 768px){
+            text-align: center;
+        }
+
+    }
+
+    &_block-right-title {
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 108%;
+        color: #282a65;
+
+        @media (max-width: 1024px){
+            font-size: 32px;
+        }
+    
+        @media (max-width: 640px){
+            font-size: 24px;
+        }
+    }
+
+    &_block-right-descp {
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 140%;
+        color: #282a65;
+
+        width: 100%;
+        max-width: 672px;
+
+        margin: 0;
+
+        @media (max-width: 1024px){
+            font-size: 24px;
+        }
+    
+        @media (max-width: 640px){
+            font-size: 16px;
+        }
+    }
+
+    
+
+    
 }
