@@ -545,6 +545,13 @@
     display: flex;
     align-items: flex-start;
     margin-top: 100px;
+
+    @media (max-width: 1024px){
+        flex-direction: column;
+        gap: 50px;
+        margin-top: 50px;
+    }
+    
 }
 
 .interestDirection-img{
@@ -553,6 +560,10 @@
     min-height: auto;
     object-fit: contain;
     max-width: 138px;
+
+    @media (max-width: 1024px){
+        max-width: 100px;
+    }
 }
 
 .interestDirection__block-left-text{
@@ -561,6 +572,10 @@
         font-size: 20px;
         line-height: 118%;
         color: #282a65;
+
+        @media (max-width: 640px){
+            font-size: 16px;
+        }
 
         mark{
             color: #a17fc7;
@@ -578,6 +593,10 @@
 
 .interestDirection__block-left {
     width: 45%;
+
+    @media (max-width: 1024px){
+        width: 100%;
+    }
 }
 
 .interestDirection__block-left-item {
@@ -588,11 +607,25 @@
 
 .interestDirection__block-right{
     width: 55%;
+
+    @media (max-width: 1024px){
+        width: 100%;
+
+        text-align: center;
+        display: flex
+    ;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .interestDirection__block-left-text {
     width: 100%;
     max-width: 267px;
+
+    @media (max-width: 1024px){
+        max-width: 100%;
+    }
 }
 
 .interestDirection__block-left-item + .interestDirection__block-left-item{
@@ -609,6 +642,10 @@
         font-size: 20px;
         color: #05203e;
         opacity: 0.72;
+
+        @media (max-width: 640px){
+            font-size: 16px;
+        }
     }
 }
 
@@ -616,6 +653,12 @@
     display: flex;
     gap: 10px;
     align-items: flex-start;
+
+    @media (max-width: 1024px){
+        flex-direction: column;
+        gap: 0;
+        align-items: center;
+    }
 }
 
 .interestDirection__block-right-descp{
@@ -623,6 +666,11 @@
     width: 100%;
     max-width: 345px;
     margin-top: 20px;
+
+    @media (max-width: 1024px){
+        margin-top: 10px;
+        max-width: 100%;
+    }
     
     p{
         margin: 0;
@@ -630,5 +678,9 @@
         font-size: 20px;
         line-height: 134%;
         color: #05203e;
+
+        @media (max-width: 640px){
+            font-size: 16px;
+        }
     }
 }
