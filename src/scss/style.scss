@@ -950,6 +950,11 @@
             line-height: 118%;
             color: #05203e;
             margin: 0;
+
+            mark{
+                color: #59c8c8;
+                background: transparent;
+            }
         }
     }
 
@@ -1041,6 +1046,33 @@
         }
 
     }
+}
+
+
+.priceDirection__block-descp-double-2{
+    margin-top: -30px;
+    border-top: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    padding-top: 50px;
+
+    @media (max-width: 640px){
+        padding-top: 65px;
+    }
+
+    @media (max-width: 440px){
+        height: 340px;
+    }
+}
+
+
+
+.priceDirection__block-descp-double-2 {
+
+    &__column-3 {
+        visibility: hidden;
+    }
+
 }
 
 
