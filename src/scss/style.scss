@@ -75,6 +75,8 @@
 
     margin-top: 30px;
     display: inline-block;
+    border: none;
+    cursor: pointer;
 
     &:hover{
         text-decoration: none;
@@ -1134,4 +1136,218 @@
         }
     }
 }
+
+.formDirection{
+    margin-top: 115px;
+    padding: 0px 10px 0px 10px;
+
+    @media (max-width: 1024px){
+        margin-top: 90px;
+    }
+
+    @media (max-width: 640px){
+        margin-top: 40px;
+    }
+}
+
+
+.formDirection .feedback__block-direction{
+    background: url("../images/additional/Form_result.webp");
+    border-radius: 32px;
+    background-repeat: no-repeat;
+    padding: 40px 40px 20px 40px;
+
+    display: block;
+    background-size: cover;
+}
+
+.formDirection .feedback__title-direction{
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 108%;
+    color: #282a65;
+    display: block;
+
+    @media (max-width: 1024px){
+        font-size: 40px;
+    }
+
+    @media (max-width: 768px){
+        text-align: center;
+    }
+
+    @media (max-width: 500px){
+        font-size: 26px;
+    }
+}
+
+.formDirection .feedback__text-direction{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 134%;
+    color: #282a65;
+    display: block;
+    margin-top: 15px;
+
+    @media (max-width: 1024px){
+        font-size: 16px;
+    }
+
+    @media (max-width: 768px){
+        text-align: center;
+    }
+}
+
+.formDirection .feedback__form-direction .feedback__input {
+    border-radius: 12px;
+    font-size: 16px;
+    padding: 15px 20px;
+    border: 1px solid #d6dade;
+    color: #282a65;
+    background: #fff;
+  }
+
+  .formDirection .feedback__form-direction{
+    flex-direction: column;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 352px;
+    position: relative;
+    z-index: 999;
+
+    @media (max-width: 768px){
+        max-width: 100%;
+    }
+  }
+
+.feedback__img-direction{
+    background: url("../images/additional/team_direction.webp");
+    background-repeat: no-repeat;
+    display: block;
+    width: 45%;
+    height: 100%;
+    position: absolute;
+    background-position: bottom right;
+    bottom: 0;
+    right: 0;
+    background-size: contain;
+
+    @media (max-width: 768px){
+        width: 100%;
+        height: 30vh;
+        position: relative;
+        background-position: center center;
+    }
+}
+
+.reviewsDirection{
+    margin-top: 115px;
+    padding: 0px 10px 0px 10px;
+
+    @media (max-width: 1024px){
+        margin-top: 90px;
+    }
+
+    @media (max-width: 640px){
+        margin-top: 40px;
+    }
+}
+
+.reviewsDirection {
+
+    &__block {
+        display: flex;
+        margin: auto;
+        width: 100%;
+    }
+
+    &__block-left {
+        width: 45%;
+    }
+
+    &__block-right {
+        width: 65%;
+    }
+
+    &__block-left-title{
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 108%;
+        color: #282a65;
+
+        @media (max-width: 640px){
+            font-size: 24px;
+        }
+        
+        mark{
+            color: #a17fc7;
+            padding: 0;
+            background: transparent;
+        }
+    }
+
+    &__block-left-col{
+        display: block;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 134%;
+        color: #a17fc7;
+
+        margin-top: 80px;
+    }
+
+    &__block-right-item{
+        border: 1px solid #d6dade;
+        border-radius: 32px;
+        padding: 40px 48px;
+        background: white;
+    }
+}
+
+.reviewsDirection {
+
+    &__item-block {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    &__item-photo {
+
+    }
+
+    &__item-name {
+        p{
+            margin: 0;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 142%;
+            color: #282a65;
+        }
+
+        span{
+            margin: 0;
+            display: block;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 142%;
+            color: #282a65;
+
+            opacity: .72;
+        }
+    }
+
+    &__item-text{
+        margin-top: 25px;
+        margin-bottom: 0;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 142%;
+        color: #282a65;
+
+        opacity: .72;
+    }
+}
+
+
 
